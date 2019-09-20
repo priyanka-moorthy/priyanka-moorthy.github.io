@@ -1,3 +1,4 @@
+<head><link rel="icon" href=<i class="fas fa-terminal"></i> ></head>
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cd priyankaMoorthy/About_Me
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cat priyanka.txt<br/><br/>
 
