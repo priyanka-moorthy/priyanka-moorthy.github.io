@@ -1,12 +1,23 @@
-<span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cd priyankaMoorthy/<!-- laglaglaglaglaglag -->About_Us
-<span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->priyanka.txt<br/><br/>
+<span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cd priyankaMoorthy/About_Me
+<span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cat priyanka.txt<br/><br/>
 
-Hey There! Hope you are doing great. I am priyanka moorthy a software engineer!<p>I enjoy solving interesting problems and making the world a better place.</p>
-<p>I drawn towards problems that do not have a solution yet, as they intriuge me to set out on a quest, use my creativity and find solutions that best fit the problem or in other words I like research oriented work.</p> <!-- bitlagbitlagbitlagbitlagbitlagbitlag -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
-<p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
-<p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a> <br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.</p>
+<p>Hey There! Hope you are doing great. I am priyanka moorthy a software engineer!</p>
+<p>I enjoy solving interesting problems and making the world a better place.I am drawn towards problems that do not have a solution yet, as they intriuge me to set out on a quest, put my creativity to work and find solutions that best fit the problem or in other words I like research oriented work.</p> 
 
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at<!-- longlonglongcomment --><a href="Your email ID">Email</a>.
-My favorite code quote, "<span id="k">Kindness is a responsibilty, not a choice.</span>". <!-- sjkfhskjf -->
+<p> Checkout my other profiles here.
+<a href="https://github.com/priyanka-moorthy">Github</a>.
+<a href="https://www.linkedin.com/in/priyanka-moorthy/">LinkedIn</a>.
+<a href="https://medium.com/@mvs.priyanka2010">Medium</a>.
+</p>
+
+<p>Feel free to send me an email at<a href="priyankamoorthycit@gmail.com">Email</a>.
+
+<p><span id="k">Climate change is real and now! Please be kind to our mother earth.</span></p>
+<p>Here are a few things you can do</p>
+<p>1. Car pool or Use public transport</p>
+<p>2. Consume only how much you can, be it electricity, food or fuel</p>
+<p>3. Plant as many trees as you can</p>
+
+I live by the quote - "Kindness is a responsibilty, not a choice."
+
 <p>Cheers!</p>
