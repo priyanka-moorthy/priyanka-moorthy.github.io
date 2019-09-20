@@ -17,4 +17,4 @@
 I live by the quote - "Kindness is a responsibilty, not a choice."
 
 <p>Cheers!</p>
-<span id="a">priyanka@moorthy</span>:exit
+<span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span>exit
