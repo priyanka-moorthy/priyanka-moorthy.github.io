@@ -1,10 +1,10 @@
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cd priyankaMoorthy/About_Me
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> cat priyanka.txt<br/><br/>
 
-<p>Hey There! Hope you are doing great. I am priyanka moorthy a software engineer!</p>
-<p>I enjoy solving interesting problems and making the world a better place.</br> I am drawn towards problems that do not have a solution yet, as they intriuge me to set out on a quest, put my creativity to work and find solutions that best fit the problem or in other words I like research oriented work.</p> 
+<p>Hey There! Hope you are doing great. I am priyanka moorthy, a software engineer!</p>
+<p>I enjoy solving interesting problems, and making the world a better place.</br> I am drawn towards problems that do not have a solution yet, as they intriuge me to set out on a quest, put my creativity to work and find solutions that best solve the problem. In short, I like research-oriented work.</p> 
 
-<p>If your organization happens to have solve such problems and possess a motive in making a difference, I would love to work with you</p>
+<p>If your organization happens to have solved or is in the process of solving one such problem,and possesses a motive in making a difference, I would love to work with you</p>
 
 <p> Checkout my other profiles here.
 <a target="_blank" href="https://github.com/priyanka-moorthy">Github</a>.
@@ -13,10 +13,11 @@
 <a target="_blank" href="https://drive.google.com/file/d/13cftPUev-klIgv3kzNXuB1uvfW5QBm8J/view?usp=sharing">Resume</a>.
 </p>
 
-<p>Feel free to send me an email at <a target="_blank" href="mailto:priyankamoorthycit@gmail.com">Email</a>.</p>
+<p>Feel free to drop a mail at <a target="_blank" href="mailto:priyankamoorthycit@gmail.com">Email</a>.</p>
 
-<p><span id="k">Climate change is real and now! Please be kind to our mother earth.</span></br>
-I live by the quote - "Kindness is a responsibilty, not a choice."</p>
+<p>Thoughts:</br>
+- <span id="k">Climate change is real and now! Please be kind to our mother earth.</span></br>
+- I live by the quote - "Kindness is a responsibilty, not a choice."</p>
 
 <p>Cheers!</p>
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> exit
