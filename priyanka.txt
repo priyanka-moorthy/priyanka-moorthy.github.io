@@ -4,7 +4,7 @@
 <p>Hey There! Hope you are doing great. I am priyanka moorthy, a software engineer!</p>
 <p>I enjoy solving interesting problems, and making the world a better place.</br> I am drawn towards problems that do not have a solution yet, as they intriuge me to set out on a quest, put my creativity to work and find solutions that best solve the problem. In short, I like research-oriented work.</p> 
 
-<p>If your organization happens to have solved or is in the process of solving one such problem,and possesses a motive in making a difference, I would love to work with you</p>
+<p>If your organization happens to have solved or is in the process of solving one such problem, and possesses a motive in making a difference, I would love to work with you</p>
 
 <p> Checkout my other profiles here.
 <a target="_blank" href="https://github.com/priyanka-moorthy">Github</a>.
