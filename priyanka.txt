@@ -15,9 +15,4 @@
 
 <p>Feel free to drop a mail at <a target="_blank" href="mailto:priyankamoorthycit@gmail.com">Email</a>.</p>
 
-<p>Thoughts:</br>
-- <span id="k">Climate change is real and now! Please be kind to our mother earth.</span></br>
-- I live by the quote - "Kindness is a responsibilty, not a choice."</p>
-
-<p>Cheers!</p>
 <span id="a">priyanka@moorthy</span>:<span id="b">~</span><span id="c">$</span> exit
