@@ -2,46 +2,123 @@
 <html lang="en">
 
 <head>
-  <title>Priyanka Moorthy</title>
+  <title>Priyanka Moorthy — AI Engineer</title>
   <meta charset="utf-8">
   <meta name="description"
-    content="Priyanka Moorthy is a Software Engineer in Machine Learning with 2+ years of experience in delivering production ready applications. Interests: Natural Language Processing, Computer Vision, Data Mining, Machine Learning, Deep Neural Networks" />
-
+    content="Priyanka Moorthy is an AI Engineer with 6+ years of experience in multi-agent LLM systems, Vision-Language-Action models, and production ML. Specializing in Reinforcement Learning, Embodied AI, and full-stack ML deployment." />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quattrocento&display=swap" rel="stylesheet">
-  <link rel="stylesheet/less" type="text/css" href="index_less.less" />
-  <!-- <script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
-  <!-- Google tag (gtag.js) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond&family=Quattrocento&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Restore dark mode before paint -->
+  <script>
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-85MG70657N"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-85MG70657N');
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-  <div class="container pt-5">
-    <div class="row align-items-center">
-      <div class="col-md-8 blue-heading">
-        <h1>Hello, I am Priyanka Moorthy.</h1>
-        <h3>AI Engineer | Machine Learning Engineer | MS in AI @ SJSU</h3>
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar navbar-expand-lg sticky-top pm-nav">
+    <div class="container">
+      <a class="navbar-brand pm-brand" href="#">PM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2">
+            <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-4 text-end">
-        <img src="image/PM.jpeg" style="height:250px" class="pm-img" />
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="about" class="pt-5 pb-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 class="hero-name">Hello, I am Priyanka Moorthy.</h1>
+          <h3 class="hero-subtitle">AI Engineer · Embodied AI &amp; Multi-Agent Systems · 6 YOE</h3>
+          <p class="hero-tagline">I build systems that learn from interaction — from cooperative LLM agents to robot manipulation policies.</p>
+          <div class="hero-links mt-3">
+            <a href="https://github.com/priyanka-moorthy" target="_blank" rel="noopener" class="hero-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/priyanka-moorthy" target="_blank" rel="noopener" class="hero-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="resume/PM_RL_resume.pdf" target="_blank" class="hero-btn">
+              <i class="fas fa-file-pdf"></i> Resume
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-end mt-4 mt-md-0">
+          <img src="image/PM.jpeg" alt="Priyanka Moorthy" class="pm-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== KEY RESULTS STRIP ======================== -->
+  <div class="key-results-strip">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-number">92%</div>
+          <div class="stat-label">routing accuracy</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-number">82%</div>
+          <div class="stat-label">faster doc processing</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-number">60%</div>
+          <div class="stat-label">claim throughput increase</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-number">22%</div>
+          <div class="stat-label">VLA loss reduction</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-lg mt-4 about-me">
 
+  <!-- ======================== ABOUT ME ======================== -->
+  <div class="container-lg mt-4 about-me">
     <div class="row">
       <div class="col-12">
         <h2 class="sub-heading">About Me</h2>
@@ -56,228 +133,377 @@
         <p>Across these roles, the through-line has been the same: take a well-defined problem, pick the right
           architecture, instrument it properly, and iterate until the system is reliable enough to depend on.</p>
 
-        <div class="accordion mt-3" id="aboutAccordion">
+        <ul class="nav about-tabs mt-3" id="aboutTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-working" data-bs-toggle="tab" data-bs-target="#pane-working"
+              type="button" role="tab" aria-controls="pane-working" aria-selected="false">
+              What I'm working on
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-specialize" data-bs-toggle="tab" data-bs-target="#pane-specialize"
+              type="button" role="tab" aria-controls="pane-specialize" aria-selected="true">
+              Where I specialize
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-looking" data-bs-toggle="tab" data-bs-target="#pane-looking"
+              type="button" role="tab" aria-controls="pane-looking" aria-selected="false">
+              What I'm looking for
+            </button>
+          </li>
+        </ul>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingWorking">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseWorking" aria-expanded="true" aria-controls="collapseWorking">
-                What I'm working on
-              </button>
-            </h2>
-            <div id="collapseWorking" class="accordion-collapse collapse show"
-              aria-labelledby="headingWorking" data-bs-parent="#aboutAccordion">
-              <div class="accordion-body">
-                <p>At Espercare, I architected a cooperative multi-agent system using Gemini for function calling, where
-                  specialized agents dynamically route billing and provider queries, retrieve grounded data, and self-evaluate
-                  through an LLM-as-Judge framework — resulting in 90%+ workflow efficiency and a 60% increase in claim
-                  processing throughput across live healthcare operations.</p>
-                <p>On the research side, I built a 77M parameter VLA model combining EfficientNet-B0 (vision) + DistilBERT
-                  (language) + cross-attention fusion to predict robot manipulation actions from camera images and natural
-                  language. Using behavior cloning on scripted expert trajectories across pick/push/place tasks, I achieved 22%
-                  loss reduction through multi-task learning.</p>
+        <div class="tab-content about-tab-content" id="aboutTabsContent">
+          <div class="tab-pane fade" id="pane-working" role="tabpanel" aria-labelledby="tab-working">
+            <p>I recently completed a 77M parameter VLA model combining EfficientNet-B0 (vision) + DistilBERT
+              (language) + cross-attention fusion to predict robot manipulation actions from camera images and
+              natural language instructions. Using behavior cloning on scripted expert policies for pick/push/place
+              tasks, I achieved 22% loss reduction through multi-task learning on Apple Silicon GPU with MPS
+              acceleration. The full implementation is on <a href="https://github.com/priyanka-moorthy/Multi-Task-Robot-Learning" target="_blank" rel="noopener" class="sub-heading">GitHub</a>.</p>
+          </div>
+          <div class="tab-pane fade show active" id="pane-specialize" role="tabpanel" aria-labelledby="tab-specialize">
+            <div class="specialty-grid">
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-robot"></i></div>
+                <div class="specialty-title">RL &amp; Robot Learning</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Behavior Cloning</span>
+                  <span class="tech-badge">VLA Models</span>
+                  <span class="tech-badge">Multi-Task Learning</span>
+                  <span class="tech-badge">MuJoCo</span>
+                  <span class="tech-badge">PyTorch</span>
+                </div>
               </div>
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-diagram-project"></i></div>
+                <div class="specialty-title">Multi-Agent Systems</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Function Calling</span>
+                  <span class="tech-badge">Agent Routing</span>
+                  <span class="tech-badge">Grounded Retrieval</span>
+                  <span class="tech-badge">Agent Evaluation</span>
+                  <span class="tech-badge">Gemini</span>
+                </div>
+              </div>
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="specialty-title">Production ML</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Vertex AI</span>
+                  <span class="tech-badge">RLHF</span>
+                  <span class="tech-badge">Pairwise Preference</span>
+                  <span class="tech-badge">Model Monitoring</span>
+                  <span class="tech-badge">Cloud Run</span>
+                </div>
+              </div>
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-brain"></i></div>
+                <div class="specialty-title">Deep Learning</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Transformers</span>
+                  <span class="tech-badge">Cross-Attention</span>
+                  <span class="tech-badge">CNNs</span>
+                  <span class="tech-badge">GANs</span>
+                  <span class="tech-badge">LLM Fine-tuning</span>
+                </div>
+              </div>
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-gears"></i></div>
+                <div class="specialty-title">MLOps</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Docker</span>
+                  <span class="tech-badge">Kubernetes</span>
+                  <span class="tech-badge">GCP</span>
+                  <span class="tech-badge">RabbitMQ</span>
+                  <span class="tech-badge">Celery</span>
+                </div>
+              </div>
+
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-heart-pulse"></i></div>
+                <div class="specialty-title">Healthcare AI</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Claims Automation</span>
+                  <span class="tech-badge">LLM-as-Judge</span>
+                  <span class="tech-badge">Human Feedback</span>
+                  <span class="tech-badge">de-id PHI/PII</span>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSpecialize">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseSpecialize" aria-expanded="false" aria-controls="collapseSpecialize">
-                Where I specialize
-              </button>
-            </h2>
-            <div id="collapseSpecialize" class="accordion-collapse collapse"
-              aria-labelledby="headingSpecialize" data-bs-parent="#aboutAccordion">
-              <div class="accordion-body">
-                <ul>
-                  <li><b>Reinforcement Learning & Robot Learning:</b> Behavior cloning, multi-task policy learning, VLA model architecture, MuJoCo simulation</li>
-                  <li><b>Multi-Agent Systems:</b> Cooperative agent design, function calling, dynamic query routing, grounded retrieval, agent evaluation</li>
-                  <li><b>Production ML:</b> Vertex AI pipelines, continuous evaluation with human feedback, pairwise preference comparison, model monitoring</li>
-                  <li><b>Deep Learning:</b> Transformers, CNNs, GANs, cross-attention fusion, encoder architectures, fine-tuning LLMs</li>
-                  <li><b>MLOps:</b> Docker, Kubernetes, GCP, Cloud Run, RabbitMQ/Celery for distributed inference</li>
-                  <li><b>Healthcare AI & Domain Expertise:</b> Claims and provider workflow automation with domain-specific LLM fine-tuning; auditability-first design, LLM-as-Judge validation, human feedback loops, and pairwise preference evaluation baked into the pipeline; experienced working within de-identified PHI/PII data environments</li>
-                </ul>
-              </div>
-            </div>
+          <div class="tab-pane fade" id="pane-looking" role="tabpanel" aria-labelledby="tab-looking">
+            <p>I'm actively looking for teams working on real-world policy learning, sim-to-real transfer, or
+              deploying RL agents in production environments — particularly in robotics, autonomous systems, or
+              LLM-driven decision-making.</p>
+            <p>I'm most excited by roles where the research-to-deployment gap is the core problem: building
+              reliable systems around learned behavior, designing evaluation frameworks for policies, and making
+              models that generalize beyond their training distribution.</p>
+            <p>If your team is working on embodied AI, multi-agent coordination, or the infrastructure side of
+              RL at scale — I'd love to connect.</p>
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingLooking">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseLooking" aria-expanded="false" aria-controls="collapseLooking">
-                What I'm looking for
-              </button>
-            </h2>
-            <div id="collapseLooking" class="accordion-collapse collapse"
-              aria-labelledby="headingLooking" data-bs-parent="#aboutAccordion">
-              <div class="accordion-body">
-                <p>Outside of my current work, I'm deepening my focus on RL and embodied AI, specifically the engineering
-                  challenges that come with deploying learned policies in robotics and autonomous systems.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <p class="mt-3">✉️ : priyankamoorthycit@gmail.com</p>
+        <p class="mt-3">
+          <a href="mailto:priyankamoorthycit@gmail.com" class="sub-heading" style="text-decoration:none;">
+            <i class="fas fa-envelope me-1"></i>priyankamoorthycit@gmail.com
+          </a>
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="container mt-5">
+  <!-- ======================== EXPERIENCE (BRIEF) ======================== -->
+  <div class="container mt-5" id="experience">
+    <h2 class="blue-heading p-1">Experience</h2>
+    <hr>
+    <div class="d-flex flex-column gap-3">
+
+      <div class="exp-row">
+        <div class="exp-left">
+          <span class="exp-title">AI Engineer</span>
+          <span class="exp-company">@ Espercare LLC</span>
+          <span class="exp-blurb">— Multi-agent LLM systems, Vertex AI pipelines, production ML evaluation</span>
+        </div>
+        <div class="exp-right">Jul 2023 – Present · San Jose, CA</div>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-left">
+          <span class="exp-title">Software Engineer</span>
+          <span class="exp-company">@ RedBlackTree Tech</span>
+          <span class="exp-blurb">— Production NLP pipelines, distributed inference, OCR + CNN classification</span>
+        </div>
+        <div class="exp-right">Jan 2019 – May 2020 · India</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <div class="container mt-5" id="projects">
     <h2 class="blue-heading p-1">Projects</h2>
     <hr>
-    <!-- Reinforcement Learning Projects -->
-    <h2 class="sub-heading mb-3">Reinforcement Learning</h2>
-    <div class="row">
+
+    <!-- Reinforcement Learning -->
+    <h5 class="sub-heading mb-3">Reinforcement Learning</h5>
+    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/vla_robot.png" alt="VLA Robot">
-          <h3 class="card-title p-2">Multi-Task Robot Learning</h3>
+          <img class="card-img-top" src="image/vla_robot.png" alt="VLA Robot">
+          <h5 class="card-title">Multi-Task Robot Learning</h5>
           <div class="card-body">
+            <div class="tech-badges">
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">MuJoCo</span>
+              <span class="tech-badge">EfficientNet-B0</span>
+              <span class="tech-badge">DistilBERT</span>
+              <span class="tech-badge">Python</span>
+            </div>
             <p class="card-text">Built a 77M parameter Vision-Language-Action model combining EfficientNet-B0 vision
               encoder, DistilBERT language encoder, and cross-attention fusion to predict robot manipulation actions
-              from camera images and natural language instructions. Implemented behavior cloning with scripted expert
-              policies for pick/push/place tasks, achieving 22% loss reduction through multi-task learning on Apple
-              Silicon GPU with MPS acceleration.</p>
-            <a href="#" class="sub-heading">Read More</a>
+              from camera images and natural language instructions. Achieved 22% loss reduction via multi-task
+              behavior cloning across pick/push/place tasks.</p>
+            <a href="https://github.com/priyanka-moorthy/Multi-Task-Robot-Learning" target="_blank" rel="noopener"
+              class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/cart.gif" alt="feature visualization">
-          <h3 class="card-title p-2 ">Deep-Q Learning on Continuous Mountain Car</h3>
+          <img class="card-img-top" src="image/cart.gif" alt="DQN Mountain Car">
+          <h5 class="card-title">Deep-Q Learning on Continuous Mountain Car</h5>
           <div class="card-body">
-            <p class="card-text">Implemented a sequential Deep-Q Learning on Open AI's continuous mountain car
-              environment that converges in 1643 episodes with 12 hidden dimensions.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">OpenAI Gym</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Implemented a sequential Deep-Q Learning agent on OpenAI's continuous mountain car
+              environment, converging in 1643 episodes with 12 hidden dimensions.</p>
             <a href="https://github.com/priyanka-moorthy/DQN-on-continuous-mountain-car/blob/main/DQN-MC.ipynb"
-              class="sub-heading">Read More</a>
+              target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Computer Vision Projects -->
-    <h2 class="sub-heading mt-3 mb-3">Computer Vision</h2>
-    <div class="row">
+    <!-- Computer Vision -->
+    <h5 class="sub-heading mt-4 mb-3">Computer Vision</h5>
+    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/pix2pix.png" alt="Butterfly">
-          <h3 class="card-title p-2 ">Pix2Pix on Butterfly data</h3>
+          <img class="card-img-top" src="image/pix2pix.png" alt="Pix2Pix Butterfly">
+          <h5 class="card-title">Pix2Pix on Butterfly Data</h5>
           <div class="card-body">
-            <p class="card-text">GAN network for image translation from line art to colored butterfly images with
-              a Pix2Pix Architecture. Achieved discriminator and generator loss of 0.91 and 1.23 respectively.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">Cycle-GAN</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">GAN network for image translation from line art to colored butterfly images using a
+              Pix2Pix architecture (U-Net Generator + PatchGAN Discriminator). Achieved discriminator and generator
+              loss of 0.91 and 1.23 respectively.</p>
             <a href="https://docs.google.com/presentation/d/1CHB8kEYcCbhGbucXZro_bWOcuA6D83Un/edit?usp=sharing&ouid=108292484720617921095&rtpof=true&sd=true"
-              class="sub-heading">Read More</a>
+              target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/nuclie.png" alt="Butterfly">
-          <h3 class="card-title p-2 ">Mask-RCNN on Nuclie data</h3>
+          <img class="card-img-top" src="image/nuclie.png" alt="Mask-RCNN Nuclei">
+          <h5 class="card-title">Mask-RCNN on Nuclei Data</h5>
           <div class="card-body">
-            <p class="card-text">Image segmentation model built using Mask-RCNN architecture on nuclei data to perform
-              object detection and segementation masks on
-              nuclei in images. Achieved a mean average precision of 0.73.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">Mask-RCNN</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Image segmentation model using Mask-RCNN for object detection and segmentation masks
+              on nuclei microscopy images. Achieved a mean average precision of 0.73.</p>
             <a href="https://github.com/priyanka-moorthy/nuclie/blob/master/Nuclei_mask_rcnn_mAP_included.ipynb"
-              class="sub-heading">Read More</a>
+              target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/samslr_arch.png" alt="Butterfly">
-          <h3 class="card-title p-2 ">Continuous Sign Language Recognition</h3>
+          <img class="card-img-top" src="image/samslr_arch.png" alt="Sign Language Recognition">
+          <h5 class="card-title">Continuous Sign Language Recognition</h5>
           <div class="card-body">
-            <p class="card-text">Working on implementing a modified SAM-SLR framework for continous sign language
-              recognition in realtime as part of my Master's project</p>
-            <a href="#" class="sub-heading">Read More</a>
+            <div class="tech-badges">
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Implemented a modified SAM-SLR framework for real-time continuous sign language
+              recognition, integrating multi-cue visual streams for improved temporal modeling. Master's thesis
+              project at SJSU.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!--NLP Projects -->
-    <h2 class="sub-heading mt-3 mb-3">Natural Language Processing</h2>
-    <div class="row">
-
+    <!-- Natural Language Processing -->
+    <h5 class="sub-heading mt-4 mb-3">Natural Language Processing</h5>
+    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/pegasus.png" alt="feature visualization">
-          <h3 class="card-title p-2 ">Abstractive Summarization</h3>
+          <img class="card-img-top" src="image/pegasus.png" alt="Abstractive Summarization">
+          <h5 class="card-title">Abstractive Summarization</h5>
           <div class="card-body">
-            <p class="card-text">Scraped thousands of movie records including plot line and storyline features from the
-              IMDB website using BeautifulSoup. Performed data cleaning, removed stop words, applied PorterStemmer to
-              stem words. Fine-tuned a Pegasus model that follows a Self-Supervised Objective. </p>
+            <div class="tech-badges">
+              <span class="tech-badge">Pegasus</span>
+              <span class="tech-badge">Transformers</span>
+              <span class="tech-badge">BeautifulSoup</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Scraped IMDB movie plot data, applied preprocessing (stop words, PorterStemmer),
+              and fine-tuned a Pegasus model using a Self-Supervised Objective for abstractive summarization.</p>
             <a href="https://drive.google.com/file/d/1J09F-MRVNAMEnzf-d9s_ExrJtAFWi5CL/view?usp=sharing"
-              class="sub-heading">Read More</a>
+              target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top p-2" src="image/sentiment.png" alt="Butterfly">
-          <h3 class="card-title p-2 ">Sentiment Analysis on Amazon reviews</h3>
+          <img class="card-img-top" src="image/sentiment.png" alt="Sentiment Analysis">
+          <h5 class="card-title">Sentiment Analysis on Amazon Reviews</h5>
           <div class="card-body">
-            <p class="card-text">Data preprocessing, word embedding, and experimental analysis of sentiment
-              classification on
-              amazon reviews data by implementing FNN, CNN, LSTM, and distillBERT models.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">DistilBERT</span>
+              <span class="tech-badge">LSTM</span>
+              <span class="tech-badge">CNN</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Comparative analysis of sentiment classification on Amazon reviews, implementing and
+              benchmarking FNN, CNN, LSTM, and DistilBERT models with word embeddings and data preprocessing.</p>
             <a href="https://docs.google.com/presentation/d/1ME43L9KlHg68rpf8bCrtdRHe9KOMGeHoziEJooPd4eY/edit?usp=sharing"
+              target="_blank" rel="noopener" class="sub-heading">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <h5 class="sub-heading mt-4 mb-3">Machine Learning</h5>
+    <div class="row g-4">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="image/Lo-Fi.png" alt="Lo-Fi Music Generation">
+          <h5 class="card-title">Lo-Fi Music Generation</h5>
+          <div class="card-body">
+            <div class="tech-badges">
+              <span class="tech-badge">LSTM</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">Trained an LSTM model on Lo-Fi style music data to generate stylistically similar
+              music sequences from learned temporal patterns.</p>
+            <a href="https://github.com/priyanka-moorthy/Lofi_Music_Generator" target="_blank" rel="noopener"
               class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-
-
-      <p></p>
     </div>
 
-
-
-    <!--ML Projects -->
-    <h2 class="sub-heading mt-3 mb-3">Machine Learning and Data Mining</h2>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top p-2" src="image/college-majors.png" alt="Butterfly">
-          <h3 class="card-title p-2 ">EDA on College Majors Data</h3>
-          <div class="card-body">
-            <p class="card-text">Performed data cleaning, Exploratory Data Analysis and mined answers from data for
-              proposed research questions</p>
-            <a href="report.html" class="sub-heading">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top p-2" src="image/t_sne.png" alt="feature visualization">
-          <h3 class="card-title p-2 ">Using T-SNE to visualize high-dimensional data on outfit images</h3>
-          <div class="card-body">
-            <p class="card-text">Data Collection, Visualize features extracted by ResNet101 network using t-SNE</p>
-            <a href="https://colab.research.google.com/drive/1xPtCBLuexgb8HoO_AZlE5uLNS3LBL1Iv?usp=sharing"
-              class="sub-heading">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top p-2" src="image/Lo-Fi.png" alt="feature visualization">
-          <h3 class="card-title p-2 ">Lo-Fi Music Generation</h3>
-          <div class="card-body">
-            <p class="card-text">Trained a LSTM model on Lo-Fi style music data to generate similar music.</p>
-            <a href="https://github.com/priyanka-moorthy/Lofi_Music_Generator" class="sub-heading">Read More</a>
-          </div>
-        </div>
-      </div>
-
-      <p></p>
-    </div>
   </div>
+
+  <!-- ======================== CONTACT / FOOTER ======================== -->
+  <footer id="contact" class="pm-footer mt-5 py-4">
+    <div class="container text-center">
+      <p>Let's connect</p>
+      <p><a href="mailto:priyankamoorthycit@gmail.com">priyankamoorthycit@gmail.com</a></p>
+      <div class="mt-2">
+        <a href="https://github.com/priyanka-moorthy" target="_blank" rel="noopener"
+          class="footer-icon-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/priyanka-moorthy" target="_blank" rel="noopener"
+          class="footer-icon-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:priyankamoorthycit@gmail.com" class="footer-icon-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="mt-3 footer-copy">© 2026 Priyanka Moorthy</p>
+    </div>
+  </footer>
+
+  <!-- ======================== DARK MODE SCRIPT ======================== -->
+  <script>
+    const darkToggle = document.getElementById('darkModeToggle');
+    const root = document.documentElement;
+
+    function setDarkMode(on) {
+      if (on) {
+        root.classList.add('dark-mode');
+        darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('darkMode', 'true');
+      } else {
+        root.classList.remove('dark-mode');
+        darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('darkMode', 'false');
+      }
+    }
+
+    darkToggle.addEventListener('click', () => {
+      setDarkMode(!root.classList.contains('dark-mode'));
+    });
+
+    // Sync icon with restored preference
+    if (root.classList.contains('dark-mode')) {
+      darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+  </script>
 
 </body>
 
