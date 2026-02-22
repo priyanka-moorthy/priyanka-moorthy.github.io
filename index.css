@@ -41,6 +41,25 @@ h3{
     margin-top: auto;
 }
 
+
+.accordion-item {
+    background-color: #FDF2E9;
+    border-color: #d4b89a;
+}
+.accordion-button {
+    background-color: #FDF2E9;
+    color: #2B2E50;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f5e4d0;
+    color: #A7673A;
+    box-shadow: none;
+}
+.accordion-button::after {
+    filter: invert(40%) sepia(40%) saturate(500%) hue-rotate(340deg);
+}
+
 .dark-bg{
     background-color: #222; 
 }
