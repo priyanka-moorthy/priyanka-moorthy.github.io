@@ -1,38 +1,38 @@
 /* ==================== CSS Variables ==================== */
 :root {
-  --bg: #FDF2E9;
-  --surface: #FDF2E9;
-  --surface-alt: #f5e4d0;
-  --border-color: #d4b89a;
-  --heading-color: #2B2E50;
-  --accent: #A7673A;
-  --text: #3a3a3a;
-  --text-muted: #777;
-  --nav-bg: rgba(253, 242, 233, 0.95);
-  --stat-color: #A7673A;
-  --badge-bg: #ede0d0;
-  --badge-text: #5a3e2b;
-  --card-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --nav-border: rgba(167, 103, 58, 0.2);
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+  --border-color: #e2e8f0;
+  --heading-color: #0f172a;
+  --accent: #0284c7;
+  --text: #334155;
+  --text-muted: #64748b;
+  --nav-bg: rgba(248, 250, 252, 0.96);
+  --stat-color: #0284c7;
+  --badge-bg: #eff6ff;
+  --badge-text: #1d4ed8;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --card-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --nav-border: #e2e8f0;
 }
 
 :root.dark-mode {
-  --bg: #1a1a2e;
-  --surface: #16213e;
-  --surface-alt: #0f2d4a;
-  --border-color: #2a3a5a;
-  --heading-color: #e8e8f0;
-  --accent: #8deaff;
-  --text: #c8c8d8;
-  --text-muted: #8888aa;
-  --nav-bg: rgba(26, 26, 46, 0.97);
-  --stat-color: #8deaff;
-  --badge-bg: #0f2d4a;
-  --badge-text: #8deaff;
-  --card-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
-  --card-hover-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
-  --nav-border: rgba(141, 234, 255, 0.12);
+  --bg: #0f172a;
+  --surface: #1a2335;
+  --surface-alt: #151f2e;
+  --border-color: #2d3f55;
+  --heading-color: #dce6f0;
+  --accent: #5b8db8;
+  --text: #9aafc4;
+  --text-muted: #5f7a96;
+  --nav-bg: rgba(15, 23, 42, 0.97);
+  --stat-color: #6fa3cf;
+  --badge-bg: #1a2d40;
+  --badge-text: #7ba8cc;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.25);
+  --card-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --nav-border: #1e2d40;
 }
 
 /* ==================== Base ==================== */
