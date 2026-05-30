@@ -56,6 +56,7 @@
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item ms-2">
@@ -95,30 +96,6 @@
     </div>
   </section>
 
-  <!-- ======================== KEY RESULTS STRIP ======================== -->
-  <div class="key-results-strip">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-6 col-md-3 stat-item">
-          <div class="stat-number">92%</div>
-          <div class="stat-label">routing accuracy</div>
-        </div>
-        <div class="col-6 col-md-3 stat-item">
-          <div class="stat-number">82%</div>
-          <div class="stat-label">faster doc processing</div>
-        </div>
-        <div class="col-6 col-md-3 stat-item">
-          <div class="stat-number">60%</div>
-          <div class="stat-label">claim throughput increase</div>
-        </div>
-        <div class="col-6 col-md-3 stat-item">
-          <div class="stat-number"> 4+ </div>
-          <div class="stat-label">YOE building AI solutions</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- ======================== ABOUT ME ======================== -->
   <div class="container-lg mt-4 about-me">
     <div class="row">
@@ -126,12 +103,17 @@
         <h2 class="sub-heading">About Me</h2>
         <p>I'm an AI Engineer with 4+ years of experience across the full ML stack — from NLP pipelines and distributed
           inference systems to multi-agent LLM architectures and Vision-Language-Action models for robot learning.</p>
-        <p>My work sits at the intersection of research and deployment: I've built cooperative agent systems that
-          handle live healthcare operations at 92% routing accuracy and &lt;2s latency, designed continuous evaluation
-          frameworks with human feedback on Vertex AI, and trained a 77M parameter VLA model for multi-task robot
-          manipulation using behavior cloning and cross-attention fusion. Earlier in my career, I built production NLP
-          pipelines (OCR + CNN) that cut document processing time by 82% and designed asynchronous distributed inference
-          systems with RabbitMQ and Celery to manage model concurrency at scale.</p>
+        <p>My work sits at the intersection of research and deployment. At Espercare, I architected a router-orchestrated
+          multi-agent system on Gemini handling 2–3K queries/day at 92% routing accuracy and ~2s latency; shipped a
+          grounded-retrieval revenue-code service that replaced ~8 hours of daily manual coding (98% automated across
+          ~14K line items/day); and built a structured-extraction pipeline for UB-04 and HCFA-1500 claims that
+          auto-extracts 96% of records at high confidence — with a 27% accuracy lift from domain-specific fine-tuning.
+          I also designed a continuous evaluation harness on Vertex AI with pairwise preference scoring, human feedback,
+          and an LLM-as-judge layer for automated QA across agents and pipelines.</p>
+        <p>Earlier in my career, I built production OCR + CNN pipelines that cut document processing time by 82% at
+          0.92 AUC, and designed async distributed inference systems on RabbitMQ and Celery. Most recently, I trained
+          a 77M parameter VLA model for multi-task robot manipulation using behavior cloning and cross-attention
+          fusion.</p>
         <p>Across these roles, the through-line has been the same: take a well-defined problem, pick the right
           architecture, instrument it properly, and iterate until the system is reliable enough to depend on.</p>
 
@@ -166,18 +148,6 @@
           </div>
           <div class="tab-pane fade show active" id="pane-specialize" role="tabpanel" aria-labelledby="tab-specialize">
             <div class="specialty-grid">
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-robot"></i></div>
-                <div class="specialty-title">RL &amp; Robot Learning</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Behavior Cloning</span>
-                  <span class="tech-badge">VLA Models</span>
-                  <span class="tech-badge">Multi-Task Learning</span>
-                  <span class="tech-badge">MuJoCo</span>
-                  <span class="tech-badge">PyTorch</span>
-                </div>
-              </div>
 
               <div class="specialty-card">
                 <div class="specialty-icon"><i class="fas fa-diagram-project"></i></div>
@@ -238,6 +208,18 @@
                 </div>
               </div>
 
+              <div class="specialty-card">
+                <div class="specialty-icon"><i class="fas fa-robot"></i></div>
+                <div class="specialty-title">RL &amp; Robot Learning</div>
+                <div class="tech-badges">
+                  <span class="tech-badge">Behavior Cloning</span>
+                  <span class="tech-badge">VLA Models</span>
+                  <span class="tech-badge">Multi-Task Learning</span>
+                  <span class="tech-badge">MuJoCo</span>
+                  <span class="tech-badge">PyTorch</span>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="tab-pane fade" id="pane-looking" role="tabpanel" aria-labelledby="tab-looking">
@@ -283,6 +265,34 @@
           <span class="exp-blurb">— Production NLP pipelines, distributed inference, OCR + CNN classification</span>
         </div>
         <div class="exp-right">Jan 2019 – May 2020 · India</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== CERTIFICATES ======================== -->
+  <div class="container mt-5" id="certificates">
+    <h2 class="blue-heading p-1">Certificates</h2>
+    <hr>
+    <div class="d-flex flex-column gap-3">
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div class="cert-info">
+          <span class="cert-title">Claude Code in Action</span>
+          <span class="cert-issuer">Anthropic Education</span>
+        </div>
+        <div class="cert-meta">
+          <span class="cert-date">May 2026</span>
+          <div class="cert-links">
+            <a href="https://verify.skilljar.com/c/enbserbazh67" target="_blank" rel="noopener" class="cert-link">
+              <i class="fas fa-shield-halved"></i> Verify
+            </a>
+            <a href="certificates/certificate-enbserbazh67-1779932072.pdf" target="_blank" class="cert-link">
+              <i class="fas fa-file-pdf"></i> View
+            </a>
+          </div>
+        </div>
       </div>
 
     </div>

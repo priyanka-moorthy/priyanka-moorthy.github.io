@@ -186,41 +186,6 @@ hr {
   transition: border-color 0.3s ease;
 }
 
-/* ==================== Key Results Strip ==================== */
-.key-results-strip {
-  background-color: var(--surface-alt);
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  padding: 1.6rem 0;
-  margin-top: 2.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.stat-item {
-  padding: 0.5rem 1rem;
-  border-right: 1px solid var(--border-color);
-}
-
-.stat-item:last-child {
-  border-right: none;
-}
-
-.stat-number {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--stat-color);
-  line-height: 1.1;
-}
-
-.stat-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 0.25rem;
-}
-
 /* ==================== Section Headings ==================== */
 .blue-heading {
   color: var(--heading-color);
@@ -385,6 +350,80 @@ h3 {
   white-space: nowrap;
 }
 
+/* ==================== Certificates ==================== */
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--surface);
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+.cert-icon {
+  font-size: 1.4rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.cert-info {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.cert-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.cert-issuer {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: var(--accent);
+}
+
+.cert-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cert-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.cert-links {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.cert-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}
+
 /* ==================== Project Cards ==================== */
 .card {
   background-color: var(--surface);
@@ -515,16 +554,6 @@ h3 {
 
 /* ==================== Responsive ==================== */
 @media (max-width: 767px) {
-  .stat-item {
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
-    padding: 0.75rem;
-  }
-
-  .stat-item:last-child {
-    border-bottom: none;
-  }
-
   .pm-img {
     height: 180px;
     width: 180px;
