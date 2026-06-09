@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>Priyanka Moorthy — AI Engineer</title>
+  <title>Priyanka Moorthy — Applied LLM Engineer</title>
   <meta charset="utf-8">
   <meta name="description"
-    content="Priyanka Moorthy is an AI Engineer with 4+ years of experience in multi-agent LLM systems, Vision-Language-Action models, and production ML. Specializing in Reinforcement Learning, Embodied AI, and full-stack ML deployment." />
+    content="Applied LLM engineer specializing in multi-agent systems and evaluation infrastructure. At Espercare, I automated 98% of a revenue-coding workflow across 14K claim lines/day and designed a continuous eval harness with pairwise scoring, LLM-as-judge, and regression gating in production." />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
@@ -75,9 +75,12 @@
       <div class="row align-items-center">
         <div class="col-md-8">
           <h1 class="hero-name">Hello, I am Priyanka Moorthy.</h1>
-          <h3 class="hero-subtitle">AI Engineer · Multi-Agent Systems · Embodied AI </h3>
-          <p class="hero-tagline">I build systems that learn from interaction — from cooperative LLM agents to robot manipulation policies.</p>
+          <h3 class="hero-subtitle">Applied LLM Engineer · Agent Infrastructure · Evaluation Systems</h3>
+          <p class="hero-tagline">I build multi-agent LLM systems that handle production load — and the evaluation infrastructure that tells you when they stop working.</p>
           <div class="hero-links mt-3">
+            <a href="#projects" class="hero-btn hero-btn-primary">
+              See my work →
+            </a>
             <a href="https://github.com/priyanka-moorthy" target="_blank" rel="noopener" class="hero-btn">
               <i class="fab fa-github"></i> GitHub
             </a>
@@ -101,21 +104,24 @@
     <div class="row">
       <div class="col-12">
         <h2 class="sub-heading">About Me</h2>
-        <p>I'm an AI Engineer with 4+ years of experience across the full ML stack — from NLP pipelines and distributed
-          inference systems to multi-agent LLM architectures and Vision-Language-Action models for robot learning.</p>
-        <p>My work sits at the intersection of research and deployment. At Espercare, I architected a router-orchestrated
-          multi-agent system on Gemini handling 2–3K queries/day at 92% routing accuracy and ~2s latency; shipped a
-          grounded-retrieval revenue-code service that replaced ~8 hours of daily manual coding (98% automated across
-          ~14K line items/day); and built a structured-extraction pipeline for UB-04 and HCFA-1500 claims that
-          auto-extracts 96% of records at high confidence — with a 27% accuracy lift from domain-specific fine-tuning.
-          I also designed a continuous evaluation harness on Vertex AI with pairwise preference scoring, human feedback,
-          and an LLM-as-judge layer for automated QA across agents and pipelines.</p>
-        <p>Earlier in my career, I built production OCR + CNN pipelines that cut document processing time by 82% at
-          0.92 AUC, and designed async distributed inference systems on RabbitMQ and Celery. Most recently, I trained
-          a 77M parameter VLA model for multi-task robot manipulation using behavior cloning and cross-attention
-          fusion.</p>
-        <p>Across these roles, the through-line has been the same: take a well-defined problem, pick the right
-          architecture, instrument it properly, and iterate until the system is reliable enough to depend on.</p>
+        <p>At Espercare, I built a router-orchestrated multi-agent system on Gemini that handles 2–3K queries/day at
+          92% routing accuracy and ~2s latency — an intent classifier routing across five specialized agents, with
+          out-of-scope blocking and low-confidence escalation to human review. Alongside it, I shipped a
+          grounded-retrieval revenue-code service over a 1.8M-document corpus that automated 98% of daily claim-line
+          coding, replacing ~8 hours of manual work across ~14K line items per day.</p>
+        <p>Building evaluation infrastructure was as much of the job as building the systems themselves. I designed a
+          continuous eval harness on Vertex AI — pairwise preference scoring, human feedback collection, regression
+          gating, and an LLM-as-judge layer running automated QA across every agent and pipeline. If I had to name the
+          one thing I know how to do that most teams skip, it's this: instrumenting a deployed LLM system so you
+          actually know what it's doing and when it degrades.</p>
+        <p>Earlier at RedBlackTree Tech, I built OCR + CNN pipelines that cut document processing time by 82% at
+          0.92 AUC and async distributed inference on RabbitMQ and Celery. My SJSU thesis extended SAM-SLR for
+          continuous sign language recognition — useful training in the gap between benchmark performance and
+          real-world deployment.</p>
+        <p>On the side, I've been exploring the embodied end of the stack: I trained a 77M-parameter
+          Vision-Language-Action model with cross-attention fusion between EfficientNet-B0 and DistilBERT for
+          multi-task robot manipulation — 22% loss reduction via behavior cloning across pick, push, and place. This is
+          early exploration toward a longer-term interest in robotics, not a current job skill.</p>
 
         <ul class="nav about-tabs mt-3" id="aboutTabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -140,97 +146,42 @@
 
         <div class="tab-content about-tab-content" id="aboutTabsContent">
           <div class="tab-pane fade" id="pane-working" role="tabpanel" aria-labelledby="tab-working">
-            <p>I recently completed a 77M parameter VLA model combining EfficientNet-B0 (vision) + DistilBERT
-              (language) + cross-attention fusion to predict robot manipulation actions from camera images and
-              natural language instructions. Using behavior cloning on scripted expert policies for pick/push/place
-              tasks, I achieved 22% loss reduction through multi-task learning on Apple Silicon GPU with MPS
-              acceleration. The full implementation is on <a href="https://github.com/priyanka-moorthy/Multi-Task-Robot-Learning" target="_blank" rel="noopener" class="sub-heading">GitHub</a>.</p>
+            <p>My main project right now is an open-source, interactive playground for learning LLM evaluation               structured like Brilliant, built around the real tools that run in production. It covers RAG evaluation
+              with RAGAS, human-in-the-loop feedback with Argilla, regression gating and LLM-as-judge with DeepEval
+              and Inspect AI, and preference learning with TRL. The goal is to make the hardest parts of deployed LLM
+              systems learnable by doing, not just reading. It's the project I care most about right now, and it'll be
+              the headline piece on this site when it ships. On the side, I'm running experiments with a
+              <a href="https://github.com/priyanka-moorthy/Multi-Task-Robot-Learning" target="_blank" rel="noopener" class="sub-heading">VLA model for multi-task robot manipulation</a>
+              — early exploration that points toward where I want to work in two to three years.</p>
           </div>
           <div class="tab-pane fade show active" id="pane-specialize" role="tabpanel" aria-labelledby="tab-specialize">
-            <div class="specialty-grid">
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-diagram-project"></i></div>
-                <div class="specialty-title">Multi-Agent Systems</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Function Calling</span>
-                  <span class="tech-badge">Agent Routing</span>
-                  <span class="tech-badge">Grounded Retrieval</span>
-                  <span class="tech-badge">Agent Evaluation</span>
-                  <span class="tech-badge">Gemini</span>
-                </div>
-              </div>
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="specialty-title">Production ML</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Vertex AI</span>
-                  <span class="tech-badge">RLHF</span>
-                  <span class="tech-badge">Pairwise Preference</span>
-                  <span class="tech-badge">Model Monitoring</span>
-                  <span class="tech-badge">Cloud Run</span>
-                </div>
-              </div>
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-brain"></i></div>
-                <div class="specialty-title">Deep Learning</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Transformers</span>
-                  <span class="tech-badge">Cross-Attention</span>
-                  <span class="tech-badge">CNNs</span>
-                  <span class="tech-badge">GANs</span>
-                  <span class="tech-badge">LLM Fine-tuning</span>
-                </div>
-              </div>
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-gears"></i></div>
-                <div class="specialty-title">MLOps</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Docker</span>
-                  <span class="tech-badge">Kubernetes</span>
-                  <span class="tech-badge">GCP</span>
-                  <span class="tech-badge">RabbitMQ</span>
-                  <span class="tech-badge">Celery</span>
-                </div>
-              </div>
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-heart-pulse"></i></div>
-                <div class="specialty-title">Healthcare AI</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Claims Automation</span>
-                  <span class="tech-badge">LLM-as-Judge</span>
-                  <span class="tech-badge">Human Feedback</span>
-                  <span class="tech-badge">de-id PHI/PII</span>
-                </div>
-              </div>
-
-              <div class="specialty-card">
-                <div class="specialty-icon"><i class="fas fa-robot"></i></div>
-                <div class="specialty-title">RL &amp; Robot Learning</div>
-                <div class="tech-badges">
-                  <span class="tech-badge">Behavior Cloning</span>
-                  <span class="tech-badge">VLA Models</span>
-                  <span class="tech-badge">Multi-Task Learning</span>
-                  <span class="tech-badge">MuJoCo</span>
-                  <span class="tech-badge">PyTorch</span>
-                </div>
-              </div>
-
-            </div>
+            <p>My core work is <strong>multi-agent LLM architecture</strong> — systems where intent classification,
+              specialized sub-agents, function calling, and human-escalation paths compose into something reliable
+              under production load. The Espercare system is the best example: a router directing queries across five
+              sub-agents, blocking out-of-scope requests, and routing low-confidence cases to human review rather
+              than hallucinating answers.</p>
+            <p>The second thread, and the one I'm building the eval playground around, is
+              <strong>evaluation infrastructure</strong>: continuous harnesses running pairwise preference scoring,
+              LLM-as-judge, and regression gating automatically. Most teams skip this layer entirely. Building it
+              properly — in a way that surfaces real degradation, not false signals — is harder than the models.</p>
+            <p>I've done this specifically in <strong>healthcare AI</strong> — claims processing, revenue coding,
+              structured extraction from UB-04 and HCFA-1500 forms. In regulated contexts where errors carry a direct
+              dollar cost, the discipline around high-confidence extraction, human-review routing, and audit trails
+              that's usually optional becomes mandatory.</p>
+            <p>The infrastructure layer is real: Vertex AI, Cloud Run, async job systems on RabbitMQ and Celery,
+              Docker, Kubernetes. I'm comfortable with the full path from training to deployment to monitoring               not just building models, but keeping them accountable in production.</p>
           </div>
           <div class="tab-pane fade" id="pane-looking" role="tabpanel" aria-labelledby="tab-looking">
-            <p>I'm actively looking for teams working on real-world policy learning, sim-to-real transfer, or
-              deploying RL agents in production environments — particularly in robotics, autonomous systems, or
-              LLM-driven decision-making.</p>
-            <p>I'm most excited by roles where the research-to-deployment gap is the core problem: building
-              reliable systems around learned behavior, designing evaluation frameworks for policies, and making
-              models that generalize beyond their training distribution.</p>
-            <p>If your team is working on embodied AI, multi-agent coordination, or the infrastructure side of
-              RL at scale — I'd love to connect.</p>
+            <p>I'm looking for teams where LLM infrastructure — agent orchestration, evaluation harnesses,
+              reliability at scale — is a first-class concern, not an afterthought.</p>
+            <p>In rough priority order: applied LLM or agent infrastructure roles at AI-native startups, especially
+              evaluation platforms (Braintrust, Confident AI, LangSmith) or AI infra companies; ML platform or
+              evaluation engineer roles at companies with serious LLM products (Notion, Linear, Cursor, Vercel AI,
+              Together, Fireworks); production ML roles at LLM-first companies in healthcare or other regulated
+              verticals, where my Espercare experience transfers directly; and research engineer roles focused on
+              evaluation infrastructure and tooling around models rather than novel modeling research.</p>
+            <p>If you're building the systems that make LLM products trustworthy — not just the models, but the
+              harnesses that tell you they're working — reach out.</p>
           </div>
         </div>
 
@@ -303,8 +254,36 @@
     <h2 class="blue-heading p-1">Projects</h2>
     <hr>
 
-    <!-- Reinforcement Learning -->
-    <h5 class="sub-heading mb-3">Reinforcement Learning</h5>
+    <!-- Featured: Eval Playground -->
+    <div class="row g-4 mb-2">
+      <div class="col-12">
+        <div class="card featured-card">
+          <div class="featured-banner">
+            <span class="featured-banner-label">In Development · Headline Project</span>
+          </div>
+          <h5 class="card-title">LLM Evaluation Playground</h5>
+          <div class="card-body">
+            <div class="tech-badges">
+              <span class="tech-badge">RAGAS</span>
+              <span class="tech-badge">TruLens</span>
+              <span class="tech-badge">DeepEval</span>
+              <span class="tech-badge">Promptfoo</span>
+              <span class="tech-badge">Inspect AI</span>
+              <span class="tech-badge">TRL</span>
+              <span class="tech-badge">Argilla</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">An interactive, open-source playground for learning LLM evaluation by doing               structured like Brilliant, built around the tools that actually run in production. Covers RAG
+              evaluation with RAGAS, human-in-the-loop feedback with Argilla, regression gating and LLM-as-judge
+              with DeepEval and Inspect AI, and preference learning with TRL. The architectural bet: real eval is
+              learnable if you show the decision points, not just the framework docs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Work -->
+    <h5 class="sub-heading mt-4 mb-3">Recent Work</h5>
     <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
@@ -318,12 +297,34 @@
               <span class="tech-badge">DistilBERT</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Built a 77M parameter Vision-Language-Action model combining EfficientNet-B0 vision
-              encoder, DistilBERT language encoder, and cross-attention fusion to predict robot manipulation actions
-              from camera images and natural language instructions. Achieved 22% loss reduction via multi-task
-              behavior cloning across pick/push/place tasks.</p>
+            <p class="card-text">I combined an EfficientNet-B0 vision encoder, DistilBERT, and cross-attention
+              fusion into a 77M-parameter model that maps camera frames and natural-language instructions to robot
+              manipulation actions — cross-attention rather than concatenation forces the model to align visual and
+              language representations before acting. Multi-task behavior cloning across pick, push, and place
+              tasks cut training loss 22% over single-task training.</p>
             <a href="https://github.com/priyanka-moorthy/Multi-Task-Robot-Learning" target="_blank" rel="noopener"
               class="sub-heading">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earlier Projects -->
+    <h5 class="sub-heading mt-4 mb-3">Earlier Projects</h5>
+    <div class="row g-4">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="image/samslr_arch.png" alt="Sign Language Recognition">
+          <h5 class="card-title">Continuous Sign Language Recognition</h5>
+          <div class="card-body">
+            <div class="tech-badges">
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <p class="card-text">My SJSU thesis: extended SAM-SLR for sentence-level continuous sign language
+              recognition by fusing appearance and skeleton keypoint streams. The core challenge was temporal
+              segmentation — identifying sign boundaries within a continuous sequence without explicit markers.</p>
           </div>
         </div>
       </div>
@@ -337,18 +338,14 @@
               <span class="tech-badge">OpenAI Gym</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Implemented a sequential Deep-Q Learning agent on OpenAI's continuous mountain car
-              environment, converging in 1643 episodes with 12 hidden dimensions.</p>
+            <p class="card-text">Implemented a DQN agent on OpenAI's continuous mountain car environment — the
+              interesting problem was reward shaping to push the agent past the no-action local minimum where
+              staying still is cheaper than building momentum. Converged in 1,643 episodes.</p>
             <a href="https://github.com/priyanka-moorthy/DQN-on-continuous-mountain-car/blob/main/DQN-MC.ipynb"
               target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Computer Vision -->
-    <h5 class="sub-heading mt-4 mb-3">Computer Vision</h5>
-    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" src="image/pix2pix.png" alt="Pix2Pix Butterfly">
@@ -360,9 +357,9 @@
               <span class="tech-badge">OpenCV</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">GAN network for image translation from line art to colored butterfly images using a
-              Pix2Pix architecture (U-Net Generator + PatchGAN Discriminator). Achieved discriminator and generator
-              loss of 0.91 and 1.23 respectively.</p>
+            <p class="card-text">Implemented Pix2Pix (U-Net Generator + PatchGAN Discriminator) for line-art to
+              full-color translation on butterfly images. PatchGAN's patch-level adversarial objective was the key
+              choice — it preserves fine texture detail that a global discriminator loses.</p>
             <a href="https://docs.google.com/presentation/d/1CHB8kEYcCbhGbucXZro_bWOcuA6D83Un/edit?usp=sharing&ouid=108292484720617921095&rtpof=true&sd=true"
               target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
@@ -378,34 +375,14 @@
               <span class="tech-badge">Mask-RCNN</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Image segmentation model using Mask-RCNN for object detection and segmentation masks
-              on nuclei microscopy images. Achieved a mean average precision of 0.73.</p>
+            <p class="card-text">Applied Mask-RCNN to nuclei microscopy segmentation, where instance segmentation
+              matters because individual cell boundaries — not just regions — carry biological meaning. Reached
+              0.73 mAP on the 2018 Data Science Bowl dataset.</p>
             <a href="https://github.com/priyanka-moorthy/nuclie/blob/master/Nuclei_mask_rcnn_mAP_included.ipynb"
               target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="image/samslr_arch.png" alt="Sign Language Recognition">
-          <h5 class="card-title">Continuous Sign Language Recognition</h5>
-          <div class="card-body">
-            <div class="tech-badges">
-              <span class="tech-badge">PyTorch</span>
-              <span class="tech-badge">OpenCV</span>
-              <span class="tech-badge">Python</span>
-            </div>
-            <p class="card-text">Implemented a modified SAM-SLR framework for real-time continuous sign language
-              recognition, integrating multi-cue visual streams for improved temporal modeling. Master's thesis
-              project at SJSU.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Natural Language Processing -->
-    <h5 class="sub-heading mt-4 mb-3">Natural Language Processing</h5>
-    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" src="image/pegasus.png" alt="Abstractive Summarization">
@@ -417,8 +394,9 @@
               <span class="tech-badge">BeautifulSoup</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Scraped IMDB movie plot data, applied preprocessing (stop words, PorterStemmer),
-              and fine-tuned a Pegasus model using a Self-Supervised Objective for abstractive summarization.</p>
+            <p class="card-text">Fine-tuned Pegasus on IMDB plot data for abstractive summarization. Pegasus's
+              gap-sentence pre-training made it the right fit over extractive approaches — it generates coherent
+              summaries rather than lifting phrases verbatim from the source.</p>
             <a href="https://drive.google.com/file/d/1J09F-MRVNAMEnzf-d9s_ExrJtAFWi5CL/view?usp=sharing"
               target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
@@ -435,18 +413,14 @@
               <span class="tech-badge">CNN</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Comparative analysis of sentiment classification on Amazon reviews, implementing and
-              benchmarking FNN, CNN, LSTM, and DistilBERT models with word embeddings and data preprocessing.</p>
+            <p class="card-text">Head-to-head benchmark of FNN, CNN, LSTM, and DistilBERT on Amazon review
+              sentiment classification. DistilBERT outperformed all baselines by a margin that makes the
+              comparison useful as a concrete demonstration of what pre-training actually buys.</p>
             <a href="https://docs.google.com/presentation/d/1ME43L9KlHg68rpf8bCrtdRHe9KOMGeHoziEJooPd4eY/edit?usp=sharing"
               target="_blank" rel="noopener" class="sub-heading">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Machine Learning -->
-    <h5 class="sub-heading mt-4 mb-3">Machine Learning</h5>
-    <div class="row g-4">
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" src="image/Lo-Fi.png" alt="Lo-Fi Music Generation">
@@ -457,8 +431,9 @@
               <span class="tech-badge">TensorFlow</span>
               <span class="tech-badge">Python</span>
             </div>
-            <p class="card-text">Trained an LSTM model on Lo-Fi style music data to generate stylistically similar
-              music sequences from learned temporal patterns.</p>
+            <p class="card-text">Trained an LSTM on Lo-Fi music data to generate stylistically consistent
+              sequences. More instructive as an exercise in temporal pattern learning than in the output — the
+              gap between statistically likely next-notes and anything a person would want to hear is significant.</p>
             <a href="https://github.com/priyanka-moorthy/Lofi_Music_Generator" target="_blank" rel="noopener"
               class="sub-heading">Read More</a>
           </div>

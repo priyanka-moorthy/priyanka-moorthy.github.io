@@ -424,6 +424,45 @@ h3 {
   text-decoration: underline;
 }
 
+/* ==================== Hero Primary CTA ==================== */
+.hero-btn.hero-btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.hero-btn.hero-btn-primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+/* ==================== Featured Project Card ==================== */
+.featured-card {
+  border: 2px solid var(--accent);
+}
+
+.featured-banner {
+  height: 100px;
+  background: linear-gradient(135deg, var(--surface-alt) 0%, var(--badge-bg) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.featured-banner-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--badge-bg);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+}
+
 /* ==================== Project Cards ==================== */
 .card {
   background-color: var(--surface);
